@@ -41,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 1.2)
+    (last_trace_width 0.25)
     (user_trace_width 1.2)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -68,7 +68,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010f0_ffffffff)
       (usegerberextensions true)
@@ -131,7 +131,7 @@
     (add_net "Net-(J7-Pad2)")
   )
 
-  (module XT60F_edge:XT60F_edge (layer F.Cu) (tedit 5F540CAE) (tstamp 5F543EC7)
+  (module XT60F_edge:XT60F_edge (layer F.Cu) (tedit 5F69F23A) (tstamp 5F543EC7)
     (at 92 109 270)
     (path /5F53DED0)
     (fp_text reference J8 (at 0 0.5 90) (layer F.SilkS) hide
@@ -187,11 +187,11 @@
       (net 9 "Net-(J5-Pad1)"))
     (pad 1 thru_hole circle (at -3.2 -3.1 270) (size 0.6 0.6) (drill 0.4) (layers *.Cu *.Mask)
       (net 9 "Net-(J5-Pad1)"))
-    (pad 2 connect rect (at 3.6 -2 270) (size 4.2 4) (layers B.Cu F.Mask)
+    (pad 2 connect rect (at 3.6 -2 270) (size 4.2 4) (layers *.Mask B.Cu)
       (net 11 "Net-(J7-Pad2)"))
     (pad 2 connect rect (at 3.6 -2 270) (size 4.2 4) (layers F.Cu F.Mask)
       (net 11 "Net-(J7-Pad2)"))
-    (pad 1 connect rect (at -3.6 -2 270) (size 4.2 4) (layers B.Cu F.Mask)
+    (pad 1 connect rect (at -3.6 -2 270) (size 4.2 4) (layers *.Mask B.Cu)
       (net 9 "Net-(J5-Pad1)"))
     (pad 2 thru_hole oval (at 4.1 1 270) (size 5.4 2.2) (drill oval 5.2 2) (layers *.Cu *.Mask)
       (net 11 "Net-(J7-Pad2)"))
